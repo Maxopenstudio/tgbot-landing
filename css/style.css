@@ -1,6 +1,6 @@
     body {
         background-color: #181818;
-        background-image: url(/img/body-bg.png);
+        background-image: url(../img/body-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: right;
@@ -251,7 +251,7 @@
 
     @media (max-width: 768px) {
         body {
-            background-image: url(./mob-bg.png);
+            background-image: url(../img/mob-bg.png);
             background-size: contain;
         }
 
