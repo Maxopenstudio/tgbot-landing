@@ -1,16 +1,16 @@
     body {
         background-color: #181818;
         background-image: url(../img/body-bg.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: top;
     }
 
     .container {
-        max-width: 1540px;
+        width: 100%;
+        max-width: calc(100vw - 100px);
         margin: 0 auto;
-        padding: 0 15px;
     }
 
     .top-nav {
@@ -104,6 +104,7 @@
     }
 
     .landing-block {
+        flex: 1 0 60%;
         color: white;
     }
 
@@ -115,12 +116,12 @@
 
     .landing-block__img {
         position: relative;
-        bottom: 80px;
-        right: 153px;
+        bottom: 130px;
+        right: 100px;
     }
 
     .landing-block__img img {
-        max-height: 720px;
+        max-height: 500px;
     }
 
     .landing-block__title {
@@ -189,7 +190,7 @@
         padding-top: 30px;
         border-radius: 30px;
         position: relative;
-        flex: 1 1 300px;
+        flex: 0 1 355px;
     }
 
     .how-works-section__block::after {
@@ -249,10 +250,16 @@
         gap: 10px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         body {
             background-image: url(../img/mob-bg.png);
             background-size: contain;
+        }
+
+        .container {
+            max-width: 990px;
+            margin: 0 auto;
+            padding: 0 15px;
         }
 
         .top-nav {
@@ -284,10 +291,6 @@
             margin: 0 auto;
             display: block;
             position: unset;
-        }
-
-        .landing-block__img img {
-            max-height: 460px;
         }
 
         .landing-block__title {
@@ -330,15 +333,32 @@
             gap: unset;
         }
 
-        @media (min-width: 620px) {
-            .landing-block__img img {
-                max-height: 755px;
-            }
+        .landing-block__img img {
+            max-height: 755px;
         }
 
-        @media (min-width: 430px) {
-            .top-nav__logo-text {
-                display: block;
-            }
+    }
+
+    @media (max-width: 499px) {
+        .landing-block__img img {
+            max-height: 550px;
+        }
+    }
+
+    @media (min-width: 430px) {
+        .top-nav__logo-text {
+            display: block;
+        }
+    }
+
+    @media (min-width: 1159px) {
+        .landing-block__img img {
+            max-height: 730px;
+        }
+    }
+
+    @media screen and (min-width: 1135px) {
+        .landing-block__img img {
+            max-height: 720px;
         }
     }
