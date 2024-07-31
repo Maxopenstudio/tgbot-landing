@@ -27,7 +27,7 @@
     }
 
     .top-nav__logo-text {
-        font-family: Outfit;
+        font-family: Outfit, sans-serif;
         font-size: 36px;
         font-weight: 400;
         line-height: 45.36px;
@@ -42,6 +42,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 1;
+        position: relative;
     }
 
     .top-nav__btn {
@@ -53,7 +55,7 @@
         border-radius: 47px;
         justify-content: center;
         align-items: center;
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
@@ -94,7 +96,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
@@ -125,7 +127,7 @@
     }
 
     .landing-block__title {
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 70px;
         font-weight: 700;
         line-height: 80px;
@@ -139,7 +141,7 @@
     }
 
     .landing-block__text {
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 24px;
         font-weight: 800;
         line-height: 28.8px;
@@ -156,7 +158,7 @@
         display: block;
         text-decoration: none;
         color: white;
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 22px;
         font-weight: 700;
         line-height: 26.4px;
@@ -165,12 +167,12 @@
 
     .how-works-section__title {
         text-align: center;
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 50px;
         font-weight: 900;
         line-height: 60px;
         color: white;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .how-works-section__blocks {
@@ -178,7 +180,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 80px;
+        gap: 50px;
         margin-bottom: 50px;
     }
 
@@ -215,7 +217,7 @@
     }
 
     .how-works-section__block p {
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 22px;
         font-weight: 500;
         line-height: 26.4px;
@@ -241,13 +243,17 @@
         background-color: #6457FF;
         text-decoration: none;
         color: white;
-        font-family: Urbanist;
+        font-family: Urbanist, sans-serif;
         font-size: 22px;
         font-weight: 700;
         line-height: 26.4px;
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+
+    section.how-works-section {
+        margin-bottom: 91px;
     }
 
     @media (max-width: 769px) {
@@ -320,7 +326,7 @@
         }
 
         .how-works-section__btn-link {
-            font-size: 20px;
+            font-size: 16px;
             line-height: 24px;
             flex: 1 0 auto;
             padding: 18px;
@@ -341,7 +347,13 @@
 
     @media (max-width: 499px) {
         .landing-block__img img {
-            max-height: 550px;
+            max-height: 475px;
+        }
+    }
+
+    @media (min-width: 770px) and (max-width: 1080px) {
+        .landing-block__container {
+            margin-bottom: 80px;
         }
     }
 
